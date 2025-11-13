@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.download-controls {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.download-button {
+  background-color: #fb923c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.download-button:hover {
+  background-color: #f97316;
+}
+
+.resume {
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.resume-header {
+  text-align: center;
+  border-bottom: 2px solid #fb923c;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.resume-header h2 {
+  color: #fb923c;
+  margin-bottom: 0.8rem;
+}
+
+.contact, .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.orange {
+  color: #fb923c;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid #fb923c;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.edu-header, .experience > strong {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    margin: 0;
+    background: white;
+  }
+
+  .resume {
+    box-shadow: none;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  section {
+    break-inside: avoid;
+  }
+
+  @page {
+    size: A4;
+    margin: 0.5in;
+  }
+}
